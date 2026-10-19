@@ -1,0 +1,198 @@
+{
+  "data": {
+    "offers": [
+      {
+        "title": "Sunny apartment near the Seine",
+        "description": "A bright apartment with a separate bedroom, a comfortable kitchen and a balcony overlooking a quiet Paris street.",
+        "city": "Paris",
+        "previewImage": "https://example.com/paris/preview.jpg",
+        "images": [
+          "https://example.com/paris/1.jpg",
+          "https://example.com/paris/2.jpg",
+          "https://example.com/paris/3.jpg",
+          "https://example.com/paris/4.jpg",
+          "https://example.com/paris/5.jpg",
+          "https://example.com/paris/6.jpg"
+        ],
+        "housingType": "apartment",
+        "amenities": [
+          "Washer",
+          "Towels",
+          "Fridge",
+          "Air conditioning"
+        ],
+        "author": {
+          "name": "Alice",
+          "email": "alice@example.com",
+          "avatar": "https://example.com/paris/avatar.jpg",
+          "password": "guest1pass",
+          "type": "pro"
+        },
+        "coordinates": {
+          "latitude": 48.85661,
+          "longitude": 2.351499
+        }
+      },
+      {
+        "title": "Quiet house close to the cathedral",
+        "description": "A spacious house for a family holiday with a furnished kitchen, a dining area and convenient access to the city centre.",
+        "city": "Cologne",
+        "previewImage": "https://example.com/cologne/preview.jpg",
+        "images": [
+          "https://example.com/cologne/1.jpg",
+          "https://example.com/cologne/2.jpg",
+          "https://example.com/cologne/3.jpg",
+          "https://example.com/cologne/4.jpg",
+          "https://example.com/cologne/5.jpg",
+          "https://example.com/cologne/6.jpg"
+        ],
+        "housingType": "house",
+        "amenities": [
+          "Washer",
+          "Towels",
+          "Fridge",
+          "Breakfast"
+        ],
+        "author": {
+          "name": "Martin",
+          "email": "martin@example.com",
+          "avatar": "https://example.com/cologne/avatar.jpg",
+          "password": "guest2pass",
+          "type": "ordinary"
+        },
+        "coordinates": {
+          "latitude": 50.938361,
+          "longitude": 6.959974
+        }
+      },
+      {
+        "title": "Comfortable room in central Brussels",
+        "description": "A cosy private room in a welcoming home with a shared kitchen and easy access to museums, cafes and public transport.",
+        "city": "Brussels",
+        "previewImage": "https://example.com/brussels/preview.jpg",
+        "images": [
+          "https://example.com/brussels/1.jpg",
+          "https://example.com/brussels/2.jpg",
+          "https://example.com/brussels/3.jpg",
+          "https://example.com/brussels/4.jpg",
+          "https://example.com/brussels/5.jpg",
+          "https://example.com/brussels/6.jpg"
+        ],
+        "housingType": "room",
+        "amenities": [
+          "Washer",
+          "Towels",
+          "Fridge",
+          "Air conditioning"
+        ],
+        "author": {
+          "name": "Sophie",
+          "email": "sophie@example.com",
+          "avatar": "https://example.com/brussels/avatar.jpg",
+          "password": "guest3pass",
+          "type": "pro"
+        },
+        "coordinates": {
+          "latitude": 50.846557,
+          "longitude": 4.351697
+        }
+      },
+      {
+        "title": "Canal view apartment in Amsterdam",
+        "description": "A comfortable apartment overlooking a canal, with large windows, a fully equipped kitchen and a peaceful bedroom.",
+        "city": "Amsterdam",
+        "previewImage": "https://example.com/amsterdam/preview.jpg",
+        "images": [
+          "https://example.com/amsterdam/1.jpg",
+          "https://example.com/amsterdam/2.jpg",
+          "https://example.com/amsterdam/3.jpg",
+          "https://example.com/amsterdam/4.jpg",
+          "https://example.com/amsterdam/5.jpg",
+          "https://example.com/amsterdam/6.jpg"
+        ],
+        "housingType": "apartment",
+        "amenities": [
+          "Washer",
+          "Towels",
+          "Fridge",
+          "Breakfast"
+        ],
+        "author": {
+          "name": "Oliver",
+          "email": "oliver@example.com",
+          "avatar": "https://example.com/amsterdam/avatar.jpg",
+          "password": "guest4pass",
+          "type": "ordinary"
+        },
+        "coordinates": {
+          "latitude": 52.370216,
+          "longitude": 4.895168
+        }
+      },
+      {
+        "title": "Modern hotel near Hamburg harbour",
+        "description": "A modern hotel room with a private bathroom and a comfortable workspace, within walking distance of the harbour.",
+        "city": "Hamburg",
+        "previewImage": "https://example.com/hamburg/preview.jpg",
+        "images": [
+          "https://example.com/hamburg/1.jpg",
+          "https://example.com/hamburg/2.jpg",
+          "https://example.com/hamburg/3.jpg",
+          "https://example.com/hamburg/4.jpg",
+          "https://example.com/hamburg/5.jpg",
+          "https://example.com/hamburg/6.jpg"
+        ],
+        "housingType": "hotel",
+        "amenities": [
+          "Washer",
+          "Towels",
+          "Fridge",
+          "Air conditioning"
+        ],
+        "author": {
+          "name": "Emma",
+          "email": "emma@example.com",
+          "avatar": "https://example.com/hamburg/avatar.jpg",
+          "password": "guest5pass",
+          "type": "pro"
+        },
+        "coordinates": {
+          "latitude": 53.550341,
+          "longitude": 10.000654
+        }
+      },
+      {
+        "title": "Family house with a sunny terrace",
+        "description": "A welcoming house with a sunny terrace, a spacious living room and everything needed for a relaxing city holiday.",
+        "city": "Dusseldorf",
+        "previewImage": "https://example.com/dusseldorf/preview.jpg",
+        "images": [
+          "https://example.com/dusseldorf/1.jpg",
+          "https://example.com/dusseldorf/2.jpg",
+          "https://example.com/dusseldorf/3.jpg",
+          "https://example.com/dusseldorf/4.jpg",
+          "https://example.com/dusseldorf/5.jpg",
+          "https://example.com/dusseldorf/6.jpg"
+        ],
+        "housingType": "house",
+        "amenities": [
+          "Washer",
+          "Towels",
+          "Fridge",
+          "Breakfast"
+        ],
+        "author": {
+          "name": "Daniel",
+          "email": "daniel@example.com",
+          "avatar": "https://example.com/dusseldorf/avatar.jpg",
+          "password": "guest6pass",
+          "type": "ordinary"
+        },
+        "coordinates": {
+          "latitude": 51.225402,
+          "longitude": 6.776314
+        }
+      }
+    ]
+  }
+}
