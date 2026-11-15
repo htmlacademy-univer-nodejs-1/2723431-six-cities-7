@@ -1,7 +1,12 @@
 import {model, Schema, Types} from 'mongoose';
 import {Offer} from '../types/offer.type.js';
 
-export type OfferEntity = Omit<Offer, 'author'> & {author: Types.ObjectId};
+export type OfferEntity = Omit<Offer, 'author' | 'isFavorite'> & {
+  author: Types.ObjectId;
+  ratingSum: number;
+  createdAt?: Date;
+  updatedAt?: Date;
+};
 
 const coordinatesSchema = new Schema({
   latitude: {type: Number, required: true},
@@ -16,8 +21,8 @@ const offerSchema = new Schema<OfferEntity>({
   previewImage: {type: String, required: true},
   images: {type: [String], required: true},
   isPremium: {type: Boolean, required: true},
-  isFavorite: {type: Boolean, required: true},
-  rating: {type: Number, required: true},
+  rating: {type: Number, default: 0},
+  ratingSum: {type: Number, default: 0},
   housingType: {type: String, required: true},
   rooms: {type: Number, required: true},
   guests: {type: Number, required: true},

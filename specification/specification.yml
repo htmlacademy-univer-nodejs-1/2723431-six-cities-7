@@ -52,7 +52,7 @@ paths:
       tags: [Offers]
       operationId: createOffer
       summary: Создать предложение
-      description: Автором нового предложения становится пользователь из токена. Количество комментариев рассчитывает сервер.
+      description: Автором нового предложения становится пользователь из токена. Рейтинг и количество комментариев рассчитывает сервер, а избранное ведётся отдельно для каждого пользователя.
       security:
         - bearerAuth: []
       requestBody:
@@ -567,6 +567,7 @@ components:
         isFavorite:
           type: boolean
           description: Принадлежит ли предложение избранному текущего пользователя; для анонимного клиента false.
+          readOnly: true
         publicationDate:
           type: string
           format: date-time
@@ -580,9 +581,11 @@ components:
         rating:
           type: number
           format: float
-          minimum: 1
+          minimum: 0
           maximum: 5
           multipleOf: 0.1
+          description: Средняя оценка комментариев, округлённая до одного знака; 0 при отсутствии комментариев.
+          readOnly: true
         commentCount:
           type: integer
           minimum: 0
@@ -634,8 +637,6 @@ components:
         - previewImage
         - images
         - isPremium
-        - isFavorite
-        - rating
         - housingType
         - rooms
         - guests
@@ -668,13 +669,6 @@ components:
             format: uri
         isPremium:
           type: boolean
-        isFavorite:
-          type: boolean
-        rating:
-          type: number
-          minimum: 1
-          maximum: 5
-          multipleOf: 0.1
         housingType:
           $ref: '#/components/schemas/HousingType'
         rooms:
@@ -702,7 +696,7 @@ components:
       type: object
       additionalProperties: false
       minProperties: 1
-      description: Частичное обновление полей предложения. Автор и количество комментариев не изменяются.
+      description: Частичное обновление полей предложения. Автор, рейтинг и количество комментариев не изменяются этим запросом.
       properties:
         title:
           type: string
@@ -729,13 +723,6 @@ components:
             format: uri
         isPremium:
           type: boolean
-        isFavorite:
-          type: boolean
-        rating:
-          type: number
-          minimum: 1
-          maximum: 5
-          multipleOf: 0.1
         housingType:
           $ref: '#/components/schemas/HousingType'
         rooms:

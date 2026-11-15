@@ -12,6 +12,7 @@
     "start": "npm run build && node ./dist/main.js",
     "build": "npm run clean && npm run compile",
     "lint": "eslint src/ --ext .ts",
+    "test:services": "npm run compile --silent && node --test tests/services.integration.mjs",
     "compile": "tsc -p tsconfig.json",
     "clean": "rimraf dist",
     "cli": "npm run compile --silent && node ./dist/cli-main.js",

@@ -30,9 +30,24 @@ export class OfferImporter {
           continue;
         }
 
-        const {author, ...offer} = parseOffer(line);
-        const user = await this.users.findByEmail(author.email) ?? await this.users.create(author);
-        await this.offers.create({...offer, author: user._id, commentCount: 0});
+        const offer = parseOffer(line);
+        const user = await this.users.findByEmail(offer.author.email) ?? await this.users.create(offer.author);
+        await this.offers.create({
+          title: offer.title,
+          description: offer.description,
+          publicationDate: offer.publicationDate,
+          city: offer.city,
+          previewImage: offer.previewImage,
+          images: offer.images,
+          isPremium: offer.isPremium,
+          housingType: offer.housingType,
+          rooms: offer.rooms,
+          guests: offer.guests,
+          price: offer.price,
+          amenities: offer.amenities,
+          author: user._id,
+          coordinates: offer.coordinates
+        });
         count++;
       }
       this.logger.info(`Импортировано предложений: ${count}`);
